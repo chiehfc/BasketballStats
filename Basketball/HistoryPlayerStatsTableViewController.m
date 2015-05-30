@@ -7,21 +7,45 @@
 //
 
 #import "HistoryPlayerStatsTableViewController.h"
-
+#import "PlayersStatsTableViewCell.h"
 @interface HistoryPlayerStatsTableViewController ()
 
+@property (strong) NSMutableArray *playerStats;
+@property (strong) NSMutableArray *games;
 @end
 
 @implementation HistoryPlayerStatsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)goBack
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // Fetch the devices from persistent data store
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"GameInfo"];
+    self.games = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    NSManagedObject *info = [self.games objectAtIndex:self.index];
+    NSSet *details = [info valueForKey:@"toPlayerStats"];
+    self.playerStats = [[details allObjects] mutableCopy];
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,29 +53,57 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSManagedObjectContext *)managedObjectContext
+{
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return 12;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *tableviewCell = @"PlayersStatsTableViewCell";
+    PlayersStatsTableViewCell *cell = (id)[tableView dequeueReusableCellWithIdentifier:tableviewCell];
     
-    // Configure the cell...
+    if(!cell) {
+        [tableView registerNib:[UINib nibWithNibName:@"PlayersStatsTableViewCell" bundle:nil] forCellReuseIdentifier:tableviewCell];
+        cell = [tableView dequeueReusableCellWithIdentifier:tableviewCell];
+    }
+    cell.playerName.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] playerName]];
+    cell.twoPointsMade.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] twoPointsMade]];
+    cell.twoPointsMiss.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] twoPointsMiss]];
+    cell.threePointsMade.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] threePointsMade]];
+    cell.threePointsMiss.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] threePointsMiss]];
+    cell.freeThrowsMade.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] freeThrowsMade]];
+    cell.freeThrowsMiss.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] freeThrowsMiss]];
+    cell.offRebounds.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] offRebounds]];
+    cell.defRebounds.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] defRebounds]];
+    cell.assists.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] assists]];
+    cell.steals.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] steals]];
+    cell.blocks.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] blocks]];
+    cell.turnovers.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] turnovers]];
+    cell.fouls.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] fouls]];
+    cell.totalPoints.text = [NSString stringWithFormat:@"%@", [[self.playerStats objectAtIndex:indexPath.row] totalPoints]];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

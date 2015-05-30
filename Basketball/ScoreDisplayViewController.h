@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ScoreDisplayViewController : UIViewController
+{
+    int guestScore;
+}
+@property (strong, nonatomic) IBOutlet UILabel *guestScoreLabel;
+@property (strong, nonatomic) IBOutlet UILabel *homeScoreLabel;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *scoreSettingButtons;
 
 @end

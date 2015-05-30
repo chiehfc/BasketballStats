@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistoryPlayerStatsTableViewController : UITableViewController
+@interface HistoryPlayerStatsTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic) NSInteger index;
 
 @end

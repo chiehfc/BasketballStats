@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    guestScore = 0;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -24,14 +25,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)guestScoreButtonsPressed:(id)sender {
+    if([sender isMemberOfClass:[UIButton class]]) {
+        UIButton *btn = (UIButton*)sender;
+        
+        if([btn tag]==10) {
+            guestScore-=1;
+        } else if([btn tag]==11) {
+            guestScore+=1;
+        } else if([btn tag]==12) {
+            guestScore-=2;
+        } else if([btn tag]==13) {
+            guestScore+=2;
+        } else if([btn tag]==14) {
+            guestScore-=3;
+        } else if([btn tag]==15) {
+            guestScore+=3;
+        }
+    }
+    if(guestScore<0) {
+        guestScore=0;
+    }
+    self.guestScoreLabel.text = [NSString stringWithFormat:@"%d", guestScore];
 }
-*/
 
 @end

@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+    <entity name="GameInfo" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toPlayerStats" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PlayerStats" inverseName="toGameInfo" inverseEntity="PlayerStats" syncable="YES"/>
+    </entity>
+    <entity name="PlayerStats" syncable="YES">
+        <attribute name="assists" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="blocks" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="defRebounds" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="fouls" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="freeThrowsMade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="freeThrowsMiss" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="offRebounds" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="steals" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="threePointsMade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="threePointsMiss" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="turnovers" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="twoPointsMade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="twoPointsMiss" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="toGameInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameInfo" inverseName="toPlayerStats" inverseEntity="GameInfo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PlayerStats" positionX="-308" positionY="-105" width="128" height="283"/>
+        <element name="GameInfo" positionX="52" positionY="54" width="128" height="73"/>
+    </elements>
 </model>

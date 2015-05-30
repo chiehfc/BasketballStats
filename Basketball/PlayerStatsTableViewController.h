@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Player.h"
+#import "StatsPanelViewController.h"
 
-@interface PlayerStatsTableViewController : UIViewController
 
+@interface PlayerStatsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+{
+    StatsPanelViewController *statsPanelVC;
+    
+    IBOutlet UITableView *tableViewObject;
+    int score;
+}
+
+@property (nonatomic, strong) NSMutableArray *playerArray;
 @end

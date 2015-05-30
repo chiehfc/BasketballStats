@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HistoryPlayerStatsTableViewController.h"
 
-@interface HistoryStatsTableViewController : UITableViewController
+@interface HistoryStatsTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
 
 @end

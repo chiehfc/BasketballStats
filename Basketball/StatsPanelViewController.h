@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Player.h"
 @interface StatsPanelViewController : UIViewController
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *statsButton;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *statsLabels;
+
+@property (strong, nonatomic) Player *player;
+@property (strong, nonatomic) UITableView *tableViewObject;
+
+- (void)setupPlayer:(Player *)player;
 
 @end

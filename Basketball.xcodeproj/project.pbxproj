@@ -21,6 +21,23 @@
 		42A7D14618CFC140004A76A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A7D12818CFC140004A76A1 /* UIKit.framework */; };
 		42A7D14E18CFC140004A76A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A7D14C18CFC140004A76A1 /* InfoPlist.strings */; };
 		42A7D15018CFC140004A76A1 /* BasketballTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A7D14F18CFC140004A76A1 /* BasketballTests.m */; };
+		42EA63FB1B0E8CA0004E073A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA63FA1B0E8CA0004E073A /* Player.m */; };
+		42EA64071B0FEECB004E073A /* PlayerStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA64051B0FEECB004E073A /* PlayerStatsViewController.m */; };
+		42EA64081B0FEECB004E073A /* PlayerStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EA64061B0FEECB004E073A /* PlayerStatsViewController.xib */; };
+		42EA640C1B10547D004E073A /* ScoreDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA640A1B10547D004E073A /* ScoreDisplayViewController.m */; };
+		42EA640D1B10547D004E073A /* ScoreDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EA640B1B10547D004E073A /* ScoreDisplayViewController.xib */; };
+		42EA64111B13DB95004E073A /* StatsPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA640F1B13DB95004E073A /* StatsPanelViewController.m */; };
+		42EA64121B13DB95004E073A /* StatsPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EA64101B13DB95004E073A /* StatsPanelViewController.xib */; };
+		42EA64161B13DE38004E073A /* PlayerStatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA64141B13DE38004E073A /* PlayerStatsTableViewController.m */; };
+		42EA64171B13DE38004E073A /* PlayerStatsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EA64151B13DE38004E073A /* PlayerStatsTableViewController.xib */; };
+		42EA641B1B13E12B004E073A /* PlayersStatsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA64191B13E12B004E073A /* PlayersStatsTableViewCell.m */; };
+		42EA641C1B13E12B004E073A /* PlayersStatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EA641A1B13E12B004E073A /* PlayersStatsTableViewCell.xib */; };
+		42F537C018EB3A0700D05FA8 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F537BE18EB3A0700D05FA8 /* minus.png */; };
+		42F537C118EB3A0700D05FA8 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F537BF18EB3A0700D05FA8 /* plus.png */; };
+		42FA21D71B14678C00918B82 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FA21D61B14678C00918B82 /* CoreData.framework */; };
+		42FA21DA1B1467D300918B82 /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42FA21D81B1467D300918B82 /* Basketball.xcdatamodeld */; };
+		42FA22121B15C16F00918B82 /* HistoryStatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FA22111B15C16F00918B82 /* HistoryStatsTableViewController.m */; };
+		42FA22151B15C59E00918B82 /* HistoryPlayerStatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FA22141B15C59E00918B82 /* HistoryPlayerStatsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +70,31 @@
 		42A7D14B18CFC140004A76A1 /* BasketballTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasketballTests-Info.plist"; sourceTree = "<group>"; };
 		42A7D14D18CFC140004A76A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42A7D14F18CFC140004A76A1 /* BasketballTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasketballTests.m; sourceTree = "<group>"; };
+		42EA63F91B0E8CA0004E073A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		42EA63FA1B0E8CA0004E073A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		42EA64041B0FEECB004E073A /* PlayerStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerStatsViewController.h; path = ../PlayerStatsViewController.h; sourceTree = "<group>"; };
+		42EA64051B0FEECB004E073A /* PlayerStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerStatsViewController.m; path = ../PlayerStatsViewController.m; sourceTree = "<group>"; };
+		42EA64061B0FEECB004E073A /* PlayerStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerStatsViewController.xib; path = ../PlayerStatsViewController.xib; sourceTree = "<group>"; };
+		42EA64091B10547D004E073A /* ScoreDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreDisplayViewController.h; sourceTree = "<group>"; };
+		42EA640A1B10547D004E073A /* ScoreDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreDisplayViewController.m; sourceTree = "<group>"; };
+		42EA640B1B10547D004E073A /* ScoreDisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreDisplayViewController.xib; sourceTree = "<group>"; };
+		42EA640E1B13DB95004E073A /* StatsPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsPanelViewController.h; sourceTree = "<group>"; };
+		42EA640F1B13DB95004E073A /* StatsPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsPanelViewController.m; sourceTree = "<group>"; };
+		42EA64101B13DB95004E073A /* StatsPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatsPanelViewController.xib; sourceTree = "<group>"; };
+		42EA64131B13DE38004E073A /* PlayerStatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatsTableViewController.h; sourceTree = "<group>"; };
+		42EA64141B13DE38004E073A /* PlayerStatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatsTableViewController.m; sourceTree = "<group>"; };
+		42EA64151B13DE38004E073A /* PlayerStatsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerStatsTableViewController.xib; sourceTree = "<group>"; };
+		42EA64181B13E12B004E073A /* PlayersStatsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersStatsTableViewCell.h; sourceTree = "<group>"; };
+		42EA64191B13E12B004E073A /* PlayersStatsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersStatsTableViewCell.m; sourceTree = "<group>"; };
+		42EA641A1B13E12B004E073A /* PlayersStatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayersStatsTableViewCell.xib; sourceTree = "<group>"; };
+		42F537BE18EB3A0700D05FA8 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		42F537BF18EB3A0700D05FA8 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		42FA21D61B14678C00918B82 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42FA21D91B1467D300918B82 /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
+		42FA22101B15C16F00918B82 /* HistoryStatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryStatsTableViewController.h; sourceTree = "<group>"; };
+		42FA22111B15C16F00918B82 /* HistoryStatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryStatsTableViewController.m; sourceTree = "<group>"; };
+		42FA22131B15C59E00918B82 /* HistoryPlayerStatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryPlayerStatsTableViewController.h; sourceTree = "<group>"; };
+		42FA22141B15C59E00918B82 /* HistoryPlayerStatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryPlayerStatsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FA21D71B14678C00918B82 /* CoreData.framework in Frameworks */,
 				42A7D12718CFC140004A76A1 /* CoreGraphics.framework in Frameworks */,
 				42A7D12918CFC140004A76A1 /* UIKit.framework in Frameworks */,
 				42A7D12518CFC140004A76A1 /* Foundation.framework in Frameworks */,
@@ -101,6 +144,7 @@
 		42A7D12318CFC140004A76A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42FA21D61B14678C00918B82 /* CoreData.framework */,
 				42A7D12418CFC140004A76A1 /* Foundation.framework */,
 				42A7D12618CFC140004A76A1 /* CoreGraphics.framework */,
 				42A7D12818CFC140004A76A1 /* UIKit.framework */,
@@ -112,13 +156,37 @@
 		42A7D12A18CFC140004A76A1 /* Basketball */ = {
 			isa = PBXGroup;
 			children = (
+				42EA64041B0FEECB004E073A /* PlayerStatsViewController.h */,
+				42EA64051B0FEECB004E073A /* PlayerStatsViewController.m */,
+				42EA64061B0FEECB004E073A /* PlayerStatsViewController.xib */,
+				42F537BE18EB3A0700D05FA8 /* minus.png */,
+				42F537BF18EB3A0700D05FA8 /* plus.png */,
 				42A7D13318CFC140004A76A1 /* AppDelegate.h */,
 				42A7D13418CFC140004A76A1 /* AppDelegate.m */,
 				42A7D13618CFC140004A76A1 /* Main.storyboard */,
 				42A7D13918CFC140004A76A1 /* ViewController.h */,
 				42A7D13A18CFC140004A76A1 /* ViewController.m */,
+				42EA64091B10547D004E073A /* ScoreDisplayViewController.h */,
+				42EA640A1B10547D004E073A /* ScoreDisplayViewController.m */,
+				42EA640B1B10547D004E073A /* ScoreDisplayViewController.xib */,
+				42EA640E1B13DB95004E073A /* StatsPanelViewController.h */,
+				42EA640F1B13DB95004E073A /* StatsPanelViewController.m */,
+				42EA64101B13DB95004E073A /* StatsPanelViewController.xib */,
+				42EA64131B13DE38004E073A /* PlayerStatsTableViewController.h */,
+				42EA64141B13DE38004E073A /* PlayerStatsTableViewController.m */,
+				42EA64151B13DE38004E073A /* PlayerStatsTableViewController.xib */,
+				42EA64181B13E12B004E073A /* PlayersStatsTableViewCell.h */,
+				42EA64191B13E12B004E073A /* PlayersStatsTableViewCell.m */,
+				42EA641A1B13E12B004E073A /* PlayersStatsTableViewCell.xib */,
+				42FA21D81B1467D300918B82 /* Basketball.xcdatamodeld */,
+				42FA22101B15C16F00918B82 /* HistoryStatsTableViewController.h */,
+				42FA22111B15C16F00918B82 /* HistoryStatsTableViewController.m */,
+				42FA22131B15C59E00918B82 /* HistoryPlayerStatsTableViewController.h */,
+				42FA22141B15C59E00918B82 /* HistoryPlayerStatsTableViewController.m */,
 				42A7D13C18CFC140004A76A1 /* Images.xcassets */,
 				42A7D12B18CFC140004A76A1 /* Supporting Files */,
+				42EA63F91B0E8CA0004E073A /* Player.h */,
+				42EA63FA1B0E8CA0004E073A /* Player.m */,
 			);
 			path = Basketball;
 			sourceTree = "<group>";
@@ -196,7 +264,7 @@
 		42A7D11918CFC140004A76A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Chieh-Fu Chen";
 				TargetAttributes = {
 					42A7D14118CFC140004A76A1 = {
@@ -228,7 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F537C018EB3A0700D05FA8 /* minus.png in Resources */,
+				42F537C118EB3A0700D05FA8 /* plus.png in Resources */,
+				42EA641C1B13E12B004E073A /* PlayersStatsTableViewCell.xib in Resources */,
 				42A7D13D18CFC140004A76A1 /* Images.xcassets in Resources */,
+				42EA64121B13DB95004E073A /* StatsPanelViewController.xib in Resources */,
+				42EA64171B13DE38004E073A /* PlayerStatsTableViewController.xib in Resources */,
+				42EA64081B0FEECB004E073A /* PlayerStatsViewController.xib in Resources */,
+				42EA640D1B10547D004E073A /* ScoreDisplayViewController.xib in Resources */,
 				42A7D12F18CFC140004A76A1 /* InfoPlist.strings in Resources */,
 				42A7D13818CFC140004A76A1 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +324,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EA63FB1B0E8CA0004E073A /* Player.m in Sources */,
+				42FA22121B15C16F00918B82 /* HistoryStatsTableViewController.m in Sources */,
 				42A7D13B18CFC140004A76A1 /* ViewController.m in Sources */,
 				42A7D13518CFC140004A76A1 /* AppDelegate.m in Sources */,
+				42EA64071B0FEECB004E073A /* PlayerStatsViewController.m in Sources */,
+				42EA64161B13DE38004E073A /* PlayerStatsTableViewController.m in Sources */,
+				42EA640C1B10547D004E073A /* ScoreDisplayViewController.m in Sources */,
+				42FA21DA1B1467D300918B82 /* Basketball.xcdatamodeld in Sources */,
+				42EA64111B13DB95004E073A /* StatsPanelViewController.m in Sources */,
+				42EA641B1B13E12B004E073A /* PlayersStatsTableViewCell.m in Sources */,
 				42A7D13118CFC140004A76A1 /* main.m in Sources */,
+				42FA22151B15C59E00918B82 /* HistoryPlayerStatsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +389,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -345,7 +428,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -383,6 +465,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Basketball/Basketball-Prefix.pch";
 				INFOPLIST_FILE = "Basketball/Basketball-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +479,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Basketball/Basketball-Prefix.pch";
 				INFOPLIST_FILE = "Basketball/Basketball-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,7 +488,6 @@
 		42A7D15718CFC140004A76A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Basketball.app/Basketball";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -427,7 +510,6 @@
 		42A7D15818CFC140004A76A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Basketball.app/Basketball";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -462,6 +544,7 @@
 				42A7D15518CFC140004A76A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42A7D15618CFC140004A76A1 /* Build configuration list for PBXNativeTarget "BasketballTests" */ = {
 			isa = XCConfigurationList;
@@ -470,8 +553,22 @@
 				42A7D15818CFC140004A76A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42FA21D81B1467D300918B82 /* Basketball.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42FA21D91B1467D300918B82 /* Basketball.xcdatamodel */,
+			);
+			currentVersion = 42FA21D91B1467D300918B82 /* Basketball.xcdatamodel */;
+			path = Basketball.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 42A7D11918CFC140004A76A1 /* Project object */;
 }
